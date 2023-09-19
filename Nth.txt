@@ -1,0 +1,18 @@
+
+var y = userInput[0];
+var x = y.split('');
+//console.log(x);
+var hasVowel = false; // Initialize a flag to track if a vowel is found
+for (var i = 0; i < x.length; i++) {
+  if (x[i] === 'a' || x[i] === 'e' || x[i] === 'i' || x[i] === 'o' || x[i] === 'u' ||
+      x[i] === 'A' || x[i] === 'E' || x[i] === 'I' || x[i] === 'O' || x[i] === 'U') {
+    hasVowel = true;
+    break; // Exit the loop as soon as a vowel is found
+  }
+}
+
+if (hasVowel) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}
